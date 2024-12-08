@@ -1,0 +1,44 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#item-input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#shopping-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#shopping-list li {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#shopping-list li.purchased {
+    text-decoration: line-through;
+    background-color: #d3f9d8;
+}
+
+#shopping-list li:hover {
+    background-color: #f0f0f0;
+}
