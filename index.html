@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Shopping List</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Shopping List</h1>
-    <input type="text" id="item-input" placeholder="Add a new item" />
-    <button id="add-item-btn">Add</button>
-    <button id="clear-list-btn">Clear List</button>
-    <ul id="shopping-list"></ul>
+    <div class="card">
+        <h1>Shopping List</h1>   
+        <div class="shopping-list">
+            <input type="text" id="item-input" placeholder="Add a new item" />
+            <button id="add-item-btn">Add Item</button>
+        </div>
+        <div class="pending-items">
+            <h2>Pending Items</h2>
+            <ul id="pending-items" class="list"></ul>
+        </div>
+        <div class="purchased-items">
+            <h2>Purchased Items</h2>
+            <ul id="purchased-items" class="list"></ul>
+        </div>
+        <button id="clear-list-btn">Clear All</button>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="shoppingList.js"></script>
 </body>
 </html>
+
